@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- Jesse Newberry
+September 25, 2025 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Savorly</title>
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Give icons based on device -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="manifest" href="site.webmanifest">
+        <meta name="theme-color" content="#66bb6a">
+    </head>
+    <body class="grey lighten-4">
+        <header>
+            <!-- Nav Bar for Bigger Screens -->
+            <nav class="z-depth-0 green lighten-1">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo white-text valign-wrapper" aria-label="Savorly Home">
+                <img src="img/logoSmall.png" alt="Savorly logo" width="70" height="70" class="circle">
+                <span class="hide-on-small-only" style="margin-left:8px"></span> <!-- optional small spacer -->
+                
+                </a>
+
+                <a href="#" class="sidenav-trigger right hide-on-med-and-up black-text" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-small-and-down">
+                <li><a href="index.html" class="waves-effect white-text">Home</a></li>
+                <li><a href="/pages/about.html" class="waves-effect white-text">About</a></li>
+                <li><a href="/pages/contact.html" class="waves-effect white-text">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Filter row under the navbar -->
+            <div class="nav-content">
+                <div class="container">
+                <div class="row" style="margin-bottom:0">
+                    <!-- Use grid columns to control width with no custom CSS -->
+                    <div class="col s12 m6 l4">
+                    <div class="input-field" style="margin:0">
+                        <select id="recipe-category-top" name="recipe-category-top">
+                        <option value="" disabled selected>-- Select a Category --</option>
+                        <option value="breakfast">🥞 Breakfast</option>
+                        <option value="lunch">🥪 Lunch</option>
+                        <option value="dinner">🍝 Dinner</option>
+                        <option value="dessert">🍪 Dessert</option>
+                        <option value="snacks">🍿 Snacks</option>
+                        <option value="drinks">🍹 Drinks</option>
+                        <option value="vegetarian">🥗 Vegetarian</option>
+                        <option value="vegan">🌱 Vegan</option>
+                        <option value="gluten-free">🌾 Gluten-Free</option>
+                        <option value="quick-easy">⚡ Quick & Easy</option>
+                        </select>
+                        
+                    </div>
+                    </div>
+                    <!-- You can add more cols here if you want other filters/buttons -->
+                </div>
+                </div>
+            </div>
+            </nav>
+        </header>
+<br>
+<br>
+<br>
+<br>
+        <aside>
+            <ul class="sidenav" id="mobile-menu">
+                <li><a class="subheader">Savorly Recipes</a></li>
+                <li><a href="index.html" class="waves-effect grey-text text-darken-4">Home</a></li>
+                <li><a href="/pages/about.html" class="waves-effect grey-text text-darken-4">About</a></li>
+                <li><a href="/pages/contact.html" class="waves-effect grey-text text-darken-4"><i class="material-icons">mail_outline</i></a></li>
+            </ul>
+        </aside>
+        <main>
+          
+            <div class="container"><h5>Recipes of the Day!</h5></div>
+            <!-- Recipes -->
+            <div class="container grey-text text-darken-4">
+                <div class="card-panel white row valign-wrapper">
+                    <div class="col s2">
+                        <img src="img/recipe.png" class=" responsive-img" alt="recipe icon">
+                    </div>
+                    <div class="col s8">
+                        <h5 class=" black-text">Pane Lorem</h5>
+                        <div>A rustic bread made with flour, water, and sit amet yeast, baked golden and perfect for dipping in consectetur oil.
+
+                        </div>
+                    </div>
+                    <div class="col s2 right-align">
+                        <button class=" btn-flat" aria-label="Save Recipe">
+                            <i class="material-icons black-text text-darken-1" title="Save for Later">save</i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- new card -->
+                <div class="card-panel white row valign-wrapper">
+                    <div class="col s2">
+                        <img src="img/recipe.png" class="responsive-img" alt="save icon">
+                    </div>
+                    <div class="col s8">
+                        <h5 class=" black-text">Salata Pasta</h5>
+                        <div >A crisp mix of greens, dolor tomatoes, and amet vinaigrette that brings freshness to any table.
+
+                        </div>
+                    </div>
+                    <div class="col s2 right-align">
+                        <button class="btn-flat" aria-label="save recipe">
+                            <i class="material-icons black-text text-darken-1" title="Save for Later">save</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- new card -->
+                <div class="card-panel white row valign-wrapper">
+                    <div class="col s2">
+                        <img src="img/recipe.png" class="responsive-img" alt="save icon">
+                    </div>
+                    <div class=" col s8">
+                        <h5 class=" black-text">Stew Consectetur</h5>
+                        <div class="">A hearty blend of lorem vegetables and dolor spices simmered slowly for comforting flavor.
+
+                        </div>
+                    </div>
+                    <div class="col s2 right-align">
+                        <button class=" btn-flat" aria-label="Save Recipe">
+                            <i class="material-icons black-text-darken-1" title="Save for Later">save</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- new card -->
+                <div class="card-panel white row valign-wrapper">
+                    <div class="col s2">
+                        <img src="img/recipe.png" class="responsive-img" alt="Save icon">
+                    </div>
+                    <div class="col s8">
+                        <h5 class="black-text">Crispy Amet Cookies</h5>
+                        <div >Sweet bites of lorem sugar, sit butter, and ipsum chips baked until golden and chewy.
+
+                        </div>
+                    </div>
+                    <div class="col s2 right-align">
+                        <button class="btn-flat" aria-label="Save Recipe">
+                            <i class="material-icons black-text-darken-1" title="Save for Later">save</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- new card -->
+                
+                  
+                
+                <div class="center">
+
+                    <button class="btn-floating btn-large green text-darken-2 sidenav-trigger pulse" data-target="side-form">
+                        <i class="material-icons">add</i>
+                    </button>
+                </div>
+
+                <br>
+              <div class="sidenav side-form" id="side-form">
+                <form class="add-recipe container section">
+                    <h6>Add New Recipe</h6>
+                    <div class="divider">  </div>                     
+                        <div class="input-field">
+                            
+                            <input type="text" placeholder="Enter Recipe Title" id="title" class="validate">
+                            <label for="title" class="black-text">Recipe Name</label>
+                        </div>
+                        <div class="input-field">                            
+                            <input type="text" placeholder="Enter Recipe Description" id="description" class="validate">
+                            <label for="description" class="black-text">Recipe Description</label>
+                        </div>
+                        <div class="input-field">
+                            <select id="recipe-category" name="recipe-category" class="validate">
+                                <option value="">-- Select a Category --</option>
+                                <option value="breakfast">🥞 Breakfast</option>
+                                <option value="lunch">🥪 Lunch</option>
+                                <option value="dinner">🍝 Dinner</option>
+                                <option value="dessert">🍪 Dessert</option>
+                                <option value="snacks">🍿 Snacks</option>
+                                <option value="drinks">🍹 Drinks</option>
+                                <option value="vegetarian">🥗 Vegetarian</option>
+                                <option value="vegan">🌱 Vegan</option>
+                                <option value="gluten-free">🌾 Gluten-Free</option>
+                                <option value="quick-easy">⚡ Quick & Easy</option>
+                            </select>
+                            <label for="recipe-category">Choose a recipe category:</label>
+                        </div>
+
+                    
+                    <div class="input-field center">
+                        <button type="button" class="btn-small green darken-2">Add</button>
+                    </div>
+                </form>
+
+              </div>  
+            </div>
+            <footer class="page-footer green">
+                <div class="container">
+                    <div class="row">
+                    <div class="">
+                        <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="pages/about.html">About</a></li>
+                        <li><a class="grey-text text-lighten-3" href="pages/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                    © 2025 Savorly LLC
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/ui.js"></script>
+</body>
